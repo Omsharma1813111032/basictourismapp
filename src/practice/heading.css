@@ -1,0 +1,11 @@
+.top-heading{
+    text-align: center;
+    font-size: 30px;
+    margin: 40px;
+}
+
+.ht{
+    padding: 10px;
+    border: 2px dotted blueviolet;
+    border-radius: 10px;
+}
