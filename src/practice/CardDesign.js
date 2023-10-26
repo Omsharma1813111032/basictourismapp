@@ -4,6 +4,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 
+
+
 const CardDesign = (props) => {
 
     return (
@@ -17,7 +19,7 @@ const CardDesign = (props) => {
                                     {props.info} <br/>
                                     <small className='price' > <span className='text-success'> $ </span>  <span className='text-danger'> {props.price} </span> </small>
                                 </Card.Text>
-                        <Button variant="danger">Not Interested</Button>
+                        <Button variant="danger" onClick={props.evnt} >Not Interested</Button>
                     </Card.Body>
                 </Card>
         </div>
