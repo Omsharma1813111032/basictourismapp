@@ -8,12 +8,13 @@ import "./Card.css"
 const Card = () => {
 
   const [list,setList] = useState(data);
-
+  
+  const reloadAgain = () =>{
+    window.location.reload();
+  }
+  
   function RemoveItem(id){
 
-    const reloadAgain = () =>{
-      window.location.reload();
-    }
 
     const newList  = list.filter((dt)=>dt.id!==id);
     setList(newList);
